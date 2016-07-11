@@ -3,8 +3,8 @@
 
 def bake_windows_os_info(opsys, conf, conf_dir, plugins_dir):
     if conf:
-        shutil.copy2(local_agents_dir + "/plugins/windows_os_info.ps1",
-                     plugins_dir + "/windows_os_info.ps1")
+        shutil.copy2(local_agents_dir + "/plugins/windows_os_info.cmd",
+                     plugins_dir + "/windows_os_info.cmd")
 
 
 bakery_info["windows_os_info"] = {

@@ -5,7 +5,7 @@ def inventory_windows_os_info(info):
 def check_windows_os_info(item, _no_params, info):
         for version, sp, serial in info:
                 version = version.replace("_", " ")
-                sp = sp.replace("_", " ")
+		sp = sp.replace("_", " ")
                 return 0, "%s (%s), S/N: %s" % (version, sp, serial)
 
 check_info["windows_os_info"] = {
